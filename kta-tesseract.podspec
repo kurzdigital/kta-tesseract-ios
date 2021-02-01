@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.header_dir = 'TesseractOCR'
   s.name = 'kta-tesseract'
-  s.version = '4.1.1'
+  s.version = '4.1.2'
   s.summary = 'Use Tesseract OCR in iOS projects written in either Objective-C or Swift.'
   s.homepage = 'https://git.kurzdigital.com/kta/kta-tesseract.git'
   s.license = { :type => 'MIT', :file => 'LICENSE.md' }
@@ -21,4 +21,5 @@ Pod::Spec.new do |s|
                                 'OTHER_LDFLAGS' => '-lc++ -lz',
                                 'CLANG_CXX_LIBRARY' => 'compiler-default'
                                }
+  s.pod_target_xcconfig     = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
