@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.header_dir = 'TesseractOCR'
   s.name = 'kta-tesseract'
-  s.version = '4.1.2'
-  s.summary = 'Use Tesseract OCR in iOS projects written in either Objective-C or Swift.'
-  s.homepage = 'https://git.kurzdigital.com/kta/kta-tesseract.git'
+  s.version = '4.1.3'
+  s.summary = 'Maintained version Tesseract OCR (with LSTM) for Objective-C or Swift.'
+  s.homepage = 'https://github.com/kurzdigital/kta-tesseract-ios.git'
   s.license = { :type => 'MIT', :file => 'LICENSE.md' }
 
   s.author       = { "KURZ Digital Solutions GmbH & Co. KG" => "ios@kurzdigital.com" }
-  s.source       =  { :git => 'https://git.kurzdigital.com/kta/kta-tesseract.git', :tag => "#{s.version}" }
+  s.source       =  { :git => 'https://github.com/kurzdigital/kta-tesseract-ios.git', :tag => "#{s.version}" }
 
   s.platform                = :ios, "11.0"
   s.source_files            = 'TesseractOCR/*.{h,m,mm}', 'TesseractOCR/include/**/*.h'
